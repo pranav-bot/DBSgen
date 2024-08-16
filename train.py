@@ -22,7 +22,9 @@ def load_image(image_path, img_size):
 
 
 bg_image_path = 'GT_HallAndMonitor.png'
-img_size = (get_image_size(bg_image_path))
+width, height = get_image_size(bg_image_path)
+channels = 3  # Assuming RGB images
+img_size = (height, width, channels)
 bg_image = load_image(bg_image_path, img_size)
 
 frames_dir = 'frames'
