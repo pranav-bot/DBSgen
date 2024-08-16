@@ -1,0 +1,4 @@
+venv/
+tfvenv/
+frames/
+__pycache__/
